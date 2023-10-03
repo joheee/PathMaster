@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:path_master/config/variable.dart';
 
-class LoginLayout extends StatelessWidget {
+class DefaultLayout extends StatelessWidget {
 
   final List<Widget> children;
-  const LoginLayout({super.key, required this.children});
+  const DefaultLayout({super.key, required this.children});
 
   @override
   Widget build(BuildContext context) {

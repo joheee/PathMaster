@@ -3,15 +3,15 @@ import 'package:path_master/component/custom_button.dart';
 import 'package:path_master/component/custom_profile_button.dart';
 import 'package:path_master/component/custom_profile_info.dart';
 import 'package:path_master/config/variable.dart';
-import 'package:path_master/layout/profile_button_layout.dart';
-import 'package:path_master/layout/profile_layout.dart';
+import 'package:path_master/layout/default_layout.dart';
+import 'package:path_master/layout/inner_layout.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ProfileLayout(
+    return DefaultLayout(
       children: [
 
         SizedBox(height: Variable.defaultTopBarPadding),
@@ -32,7 +32,8 @@ class ProfilePage extends StatelessWidget {
           onTap: () {},
         ),
 
-        ProfileButtonLayout(
+        InnerLayout(
+          cross: CrossAxisAlignment.start,
           children: [
             Divider(
               color: Variable.whiteShadeColor, // Line color
@@ -76,7 +77,8 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
 
-        ProfileButtonLayout(
+        InnerLayout(
+          cross: CrossAxisAlignment.start,
           children: [
             Divider(
               color: Variable.whiteShadeColor, // Line color

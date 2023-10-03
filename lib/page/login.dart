@@ -4,7 +4,7 @@ import 'package:path_master/component/custom_input_field.dart';
 import 'package:path_master/component/custom_text_icon.dart';
 import 'package:path_master/config/variable.dart';
 import 'package:path_master/layout/login_card_layout.dart';
-import 'package:path_master/layout/login_layout.dart';
+import 'package:path_master/layout/default_layout.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
     TextEditingController usernameController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
 
-    return LoginLayout(
+    return DefaultLayout(
       children: [
         Image.asset(
           'asset/logo-flex.png',

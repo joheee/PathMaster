@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:path_master/page/profile.dart';
+import 'package:path_master/page/form.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ProfilePage();
+    return const FormPage();
   }
 }

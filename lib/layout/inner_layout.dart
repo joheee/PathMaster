@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:path_master/config/variable.dart';
 
-class ProfileButtonLayout extends StatelessWidget {
+class InnerLayout extends StatelessWidget {
   final List<Widget> children;
-  const ProfileButtonLayout({
+  final CrossAxisAlignment cross;
+  const InnerLayout({
     super.key,
-    required this.children
+    required this.children,
+    required this.cross
   });
 
   @override
@@ -13,7 +15,7 @@ class ProfileButtonLayout extends StatelessWidget {
     return Padding(
       padding: Variable.defaultPaddingSet,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: cross,
         children: children
       ),
     );
