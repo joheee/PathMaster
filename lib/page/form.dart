@@ -14,6 +14,7 @@ class FormPage extends StatelessWidget {
     TextEditingController dateController = TextEditingController();
 
     return DefaultLayout(
+      isBottomBar: true,
       children: [
         
         SizedBox(height: Variable.defaultTopBarPadding),

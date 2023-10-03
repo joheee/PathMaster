@@ -16,6 +16,7 @@ class LoginPage extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
 
     return DefaultLayout(
+      isBottomBar: false,
       children: [
         Image.asset(
           'asset/logo-flex.png',
