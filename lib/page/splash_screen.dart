@@ -1,3 +1,4 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:path_master/config/variable.dart';
 import 'package:path_master/page/login.dart';
@@ -14,16 +15,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Variable.backgroundColor,
-        body: Center(
-          child: Image.asset(
-            'asset/logo-grid.png',
-            width: 220,
-            height: 150,
-          )
+      home: AnimatedSplashScreen(
+          duration: 2000,
+          splash: 'asset/logo-grid.png',
+          nextScreen: const LoginPage(),
+          splashTransition: SplashTransition.fadeTransition,
+          backgroundColor: Variable.backgroundColor
         ),
-      ),
     );
   }
 }
