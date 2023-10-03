@@ -3,6 +3,7 @@ import 'package:path_master/component/custom_bottom_bar_item.dart';
 import 'package:path_master/config/variable.dart';
 import 'package:path_master/page/form.dart';
 import 'package:path_master/page/profile.dart';
+import 'package:path_master/page/scan.dart';
 
 class DefaultLayout extends StatefulWidget {
 
@@ -49,7 +50,12 @@ class _DefaultLayoutState extends State<DefaultLayout> {
                   CustomBottomBarItem(
                     index: 0,
                     iconData: Icons.map_outlined,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ScanPage())
+                      );
+                    },
                   ),
                   CustomBottomBarItem(
                     index: 1,
