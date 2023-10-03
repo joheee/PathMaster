@@ -22,10 +22,11 @@ class ProfilePage extends StatelessWidget {
           ),
         ),
 
-        const CustomProfileInfo(
+        CustomProfileInfo(
           image: 'asset/profile.png',
           username: 'Kevin',
           email: 'kegin@gmail.com',
+          onTap: () {},
         ),
 
         ProfileButtonLayout(
