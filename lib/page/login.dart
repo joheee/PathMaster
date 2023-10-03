@@ -5,6 +5,7 @@ import 'package:path_master/component/custom_text_icon.dart';
 import 'package:path_master/config/variable.dart';
 import 'package:path_master/layout/login_card_layout.dart';
 import 'package:path_master/layout/default_layout.dart';
+import 'package:path_master/page/profile.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -84,7 +85,12 @@ class LoginPage extends StatelessWidget {
               backgroundColor: Variable.greenColor,
               width: Variable.defaultWidth,
               text: 'Sign In',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProfilePage())
+                );
+              },
             ),
           ]
         ),

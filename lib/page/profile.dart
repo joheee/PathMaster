@@ -5,6 +5,7 @@ import 'package:path_master/component/custom_profile_info.dart';
 import 'package:path_master/config/variable.dart';
 import 'package:path_master/layout/default_layout.dart';
 import 'package:path_master/layout/inner_layout.dart';
+import 'package:path_master/page/login.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -117,7 +118,12 @@ class ProfilePage extends StatelessWidget {
         CustomButton(
           backgroundColor: Variable.redColor, 
           text: 'Log Out', 
-          onPressed: () {}, 
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const LoginPage())
+            );
+          }, 
           width: 240)
       ]
     );
