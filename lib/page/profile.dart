@@ -13,6 +13,9 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProfileLayout(
       children: [
+
+        SizedBox(height: Variable.defaultTopBarPadding),
+        
         Text(
           "My Profile",
           style: TextStyle(
@@ -72,6 +75,7 @@ class ProfilePage extends StatelessWidget {
             
           ],
         ),
+
         ProfileButtonLayout(
           children: [
             Divider(
@@ -106,6 +110,7 @@ class ProfilePage extends StatelessWidget {
             ),
           ],
         ),
+
         CustomButton(
           backgroundColor: Variable.redColor, 
           text: 'Log Out', 

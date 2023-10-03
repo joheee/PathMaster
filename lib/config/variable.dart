@@ -10,5 +10,6 @@ class Variable {
   static BorderRadius defaultBorderRadius = BorderRadius.circular(30.0);
   static double defaultWidth = 220;
   static double defaultPadding = 30.0;
+  static double defaultTopBarPadding = 60.0;
   static EdgeInsets defaultPaddingSet = EdgeInsets.fromLTRB(Variable.defaultPadding, Variable.defaultPadding/5, Variable.defaultPadding, Variable.defaultPadding/5);
 }
