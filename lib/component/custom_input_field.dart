@@ -31,6 +31,10 @@ class CustomInputField extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: Variable.defaultBorderRadius
           ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Variable.greenColor), 
+            borderRadius: Variable.defaultBorderRadius
+          ),
           prefixIcon: prefixIcon
         ),
       ),

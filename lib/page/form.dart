@@ -12,6 +12,9 @@ class FormPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     TextEditingController dateController = TextEditingController();
+    TextEditingController reportController = TextEditingController();
+    TextEditingController resourceController = TextEditingController();
+    TextEditingController linkController = TextEditingController();
 
     return DefaultLayout(
       isBottomBar: true,
@@ -38,17 +41,17 @@ class FormPage extends StatelessWidget {
               outerText: "Date",
             ),
             CustomInputForm(
-              controller: dateController,
+              controller: reportController,
               hintText: "Ex: digital",
               outerText: "Report Type",
             ),     
             CustomInputForm(
-              controller: dateController,
+              controller: resourceController,
               hintText: "Ex: Gempa bumi, Longsor",
               outerText: "What kind of resources do you have?",
             ),            
             CustomInputForm(
-              controller: dateController,
+              controller: linkController,
               hintText: "Ex: https://google.com/longsor",
               outerText: "Resource link",
             ),

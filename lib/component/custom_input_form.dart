@@ -22,7 +22,7 @@ class CustomInputForm extends StatelessWidget {
           style: TextStyle(
             fontSize: 13.0,
             fontWeight: FontWeight.w400,
-            color: Variable.whiteColor
+            color: Variable.whiteColor,
           ),
         ),
         const SizedBox(height: 5.0),
@@ -35,10 +35,14 @@ class CustomInputForm extends StatelessWidget {
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),
-            contentPadding: const EdgeInsets.all(15.0), // Adjust the vertical padding to set the height
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Variable.greenColor), 
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            contentPadding: const EdgeInsets.all(15.0), 
           ),
         ),
-      ]
+      ],
     );
   }
 }
