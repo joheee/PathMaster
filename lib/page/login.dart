@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget {
                 fontSize: 40.0,
                 fontWeight: FontWeight.bold
               ),
-              ),
+            ),
             const Text(
               "Please login to you account",
               style: TextStyle(
@@ -81,6 +81,7 @@ class LoginPage extends StatelessWidget {
             
             CustomButton(
               backgroundColor: Variable.greenColor,
+              width: Variable.defaultWidth,
               text: 'Sign In',
               onPressed: () {},
             ),
